@@ -2,7 +2,7 @@ export const PORT = process.env.PORT || 3000
 
 export const DB_HOST = process.nextTick.DB_HOST || 'localhost'
 
-export const DB_USER = process.nextTick.DB_USER || 'root'
+export const DB_USER = process.nextTick.git || 'root'
 
 export const DB_PASSWORD = process.nextTick.DB_PASSWORD || 'n0m3l0'
 
