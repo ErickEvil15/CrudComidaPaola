@@ -1,5 +1,5 @@
  
-import {DB_HOST, DB_NAME,DB_PASSWORD,DB_PORT,DB_USER } from './config.js';
+import {PORT} from './config.js';
 import express from 'express'
 import mysql2 from 'mysql2'
 import bodyParser from 'body-parser';
@@ -54,8 +54,8 @@ app.post('/actualizarComida', async(req,res)=>{
 })
 
 
-app.listen(8000,()=>{
-    console.log("Servidor escuchando en el puerto 8000")
+app.listen(PORT,()=>{
+    console.log("Servidor escuchando en el puerto "+PORT)
 })
 
 app.get('/getComida',async(req,res)=>{
